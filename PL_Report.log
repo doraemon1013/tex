@@ -1,12 +1,12 @@
-This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2024.12.3)  25 MAY 2025 16:54
+This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2024.12.3)  25 MAY 2025 17:18
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**PL_Report.tex
-(./PL_Report.tex
+**/home/yuya/projects/homework/tex/PL_Report
+(/home/yuya/projects/homework/tex/PL_Report.tex
 pLaTeX2e <2021-11-15u04> (based on LaTeX2e <2021-11-15> patch level 1)
-L3 programming layer <2022-01-21>
-(/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjsarticle.cls
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjsarticle.cls
 Document Class: bxjsarticle 2021/05/18 v2.5a BXJS document classes
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
@@ -20,18 +20,14 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count186
 \calc@Cskip=\skip49
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-)
-(/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjscompat.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjscompat.sty
 Package: bxjscompat 2021/05/18 v2.5a BXJS document classes
-)
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \stockwidth=\dimen156
@@ -45,11 +41,9 @@ LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 9.6222pt on input line 1004.
 \fullwidth=\dimen161
-
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count187
@@ -79,18 +73,14 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \jsc@tocl@width=\dimen170
 \@lnumwidth=\dimen171
 \bibindent=\dimen172
-
-(/usr/share/texlive/texmf-dist/tex/latex/bxwareki/bxwareki.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/bxwareki/bxwareki.sty
 Package: bxwareki 2019/06/01 v0.6
 \c@warekiyear=\count198
-
-(/usr/share/texlive/texmf-dist/tex/latex/bxwareki/bxwareki-cd.def
+ (/usr/share/texlive/texmf-dist/tex/latex/bxwareki/bxwareki-cd.def
 File: bxwareki-cd.def 2019/06/01 v0.6
-))
-(/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjsja-standard.def
+)) (/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjsja-standard.def
 File: bxjsja-standard.def 2021/05/18 v2.5a BXJS document classes
-
-(/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjsja-minimal.def
+ (/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjsja-minimal.def
 File: bxjsja-minimal.def 2021/05/18 v2.5a BXJS document classes
 LaTeX Info: Redefining \textmc on input line 239.
 LaTeX Info: Redefining \textgt on input line 240.
@@ -111,28 +101,22 @@ LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 (Font)                  JY2/mc/m/n --> JY2/gt/m/n on input line 435.
 LaTeX Info: Redefining \textmc on input line 709.
 LaTeX Info: Redefining \textgt on input line 710.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 107.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2021/03/18 v5.0j Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen173
 \Gin@req@width=\dimen174
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
 \FV@CodeLineNo=\count199
 \FV@InFile=\read2
@@ -140,25 +124,21 @@ Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
 \c@FancyVerbLine=\count266
 \FV@StepNumber=\count267
 \FV@OutFile=\write3
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen175
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen176
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
 \inf@bad=\count268
@@ -198,20 +178,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
 )
-Package newfloat Info: New float `eopcode' with options `name=Listing, fileext=
-lol' on input line 11.
+Package newfloat Info: New float `eopcode' with options `name=Listing, fileext=lol' on input line 11.
 \c@eopcode=\count280
 \newfloat@ftype=\count281
 Package newfloat Info: float type `eopcode'=8 on input line 11.
-
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2022-01-12 L3 backend support: dvipdfmx
-
-(|extractbb --version)
+ (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count282
 \l__color_backend_stack_int=\count283
 \g__color_backend_stack_int=\count284
@@ -307,9 +283,6 @@ LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
 (Font)              Font shape `JY2/gt/m/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 9.24713pt on input line 36.
-
-LaTeX Warning: Reference `code' on page 1 undefined on input line 43.
-
 [1
 
 ]
@@ -329,21 +302,14 @@ LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
 (Font)              scaled to size 7.3977pt on input line 74.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 7.3977pt on input line 74.
- [2] (./PL_Report.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [2] (./PL_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 3821 strings out of 479842
- 61841 string characters out of 5887289
- 367453 words of memory out of 5000000
+ 3822 strings out of 479842
+ 61938 string characters out of 5887289
+ 367452 words of memory out of 5000000
  22119 multiletter control sequences out of 15000+600000
  481541 words of font info for 92 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 61i,6n,71p,286b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,6n,71p,315b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PL_Report.dvi (2 pages, 4496 bytes).
+Output written on PL_Report.dvi (2 pages, 4492 bytes).
