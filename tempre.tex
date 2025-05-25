@@ -1,0 +1,54 @@
+\documentclass[autodetect-engine,dvi=dvipdfmx,ja=standard,
+               a4j,11pt]{bxjsarticle}
+\RequirePackage{geometry}
+\geometry{reset,paperwidth=210truemm,paperheight=297truemm}
+\geometry{hmargin=25truemm,top=20truemm,bottom=25truemm,footskip=10truemm,headheight=0mm}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{amsmath}
+\renewcommand{\theFancyVerbLine}{\texttt{\footnotesize{\arabic{FancyVerbLine}:}}}
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[name=Listing, fileext=lol]{eopcode}
+%%======== レポートタイトル等 ======================================%%
+% ToDo: 提出要領に従って，適切なタイトル・サブタイトルを設定する
+\title{}
+
+% ToDo: 自分自身の氏名と学生番号に書き換える
+\author{氏名: 赤松 佑哉 (akamatsu, YUYA) \\
+        学生番号: 09B23595}
+
+% ToDo: レポート課題等の指示に従って適切に書き換える
+\date{出題日: 2024年月日 \\
+      提出日: 2024年月日 \\
+      締切日: 2024年月日 \\}  % 注：最後の\\は不要に見えるが必要．
+
+
+%%======== 本文 ====================================================%%
+\begin{document}
+\maketitle
+\section{}
+\begin{Verbatim}
+\end{Verbatim}
+\begin{table}[b]
+    \centering 
+      \caption{計算結果}%表の題%
+      \begin{tabular}{|l|l|l|}
+      \hline
+        \textbf{} & \textbf{} & \textbf{} \\ %label
+      \hline
+        \verb||    &   $1$  &   $1$  & \\
+      \hline
+      \end{tabular}
+    \end{table}
+    \begin{figure}[htb]
+        \centering
+        \rotatebox{270}{\includegraphics[scale=0.4]{Pro_Lan_Result.PNG}}
+        \vspace{20pt} % ← 適宜調整
+        \caption{}
+    \end{figure}
+\section{作成したプログラムのソースコード}
+\begin{Verbatim}[numbers=left, xleftmargin=8mm, numbersep=6pt,
+    fontsize=\small, baselinestretch=0.8]
+\end{Verbatim}
+
+\end{document}
