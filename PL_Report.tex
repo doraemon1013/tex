@@ -1,0 +1,81 @@
+\documentclass[autodetect-engine,dvi=dvipdfmx,ja=standard,
+               a4j,11pt]{bxjsarticle}
+\RequirePackage{geometry}
+\geometry{reset,paperwidth=210truemm,paperheight=297truemm}
+\geometry{hmargin=25truemm,top=20truemm,bottom=25truemm,footskip=10truemm,headheight=0mm}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{amsmath}
+\renewcommand{\theFancyVerbLine}{\texttt{\footnotesize{\arabic{FancyVerbLine}:}}}
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[name=Listing, fileext=lol]{eopcode}
+%%======== レポートタイトル等 ======================================%%
+% ToDo: 提出要領に従って，適切なタイトル・サブタイトルを設定する
+\title{プログラミング言語レポート}
+
+% ToDo: 自分自身の氏名と学生番号に書き換える
+\author{氏名: 赤松 佑哉 (akamatsu, YUYA) \\
+        学生番号: 09B23595}
+
+% ToDo: レポート課題等の指示に従って適切に書き換える
+\date{出題日: 2024年5月9日 \\
+      提出日: 2024年月日 \\
+      締切日: 2024年6月4日 \\}  % 注：最後の\\は不要に見えるが必要．
+
+
+%%======== 本文 ====================================================%%
+\begin{document}
+\maketitle
+\section{概要}
+講義を通して学んだ関数型言語\verb|SML|言語を実際の問題解決を通して実践した．
+今回，\verb|C|言語の標準ライブラリに存在する文字列操作関数，\verb|strcat|
+，\verb|strcmp|，\verb|strcpy|，\verb|strexi|，\verb|strlen|
+，\verb|sort|と同等の操作をリストに行う\verb|SML|プログラムを作成した．
+いかに各関数の概要を示す．
+\begin{itemize}
+    \item \textbf{listcat} ：\verb|strcat|に相当し，2つのリストを連結する．
+    \item \textbf{listcmp} ：\verb|strcmp|に相当し，2つのリストが要素・順序ともに等しいか判定する．
+    \item \textbf{listcpy} ：\verb|strcpy|に相当し，リストの複製（コピー）を行う．
+    \item \textbf{listexi} ：\verb|strexi|のように，条件を満たす要素がリスト中に存在するかを確認する（高階関数を用いる）．
+    \item \textbf{listlen} ：\verb|strlen|に相当し，リストの長さ（要素数）を返す．
+    \item \textbf{listsort}：\verb|sort|に対応し，マージソートによりリストを昇順に並べ替える．
+\end{itemize}
+作成したプログラムは第\ref{code}章に添付している．
+\section{\texttt{listcat.sml}}
+引数として二つのリストを受け取り，そのリストを繋げてできる一つのリストを返り値
+とする\verb|listcat|関数を作成した．パターンマッチングを使用し引数の，場合分けを行い
+異なる処理を行う．片方が空リストであればもう片方のリストを返す．どちらも要素を持つときは
+第一引数の初めの要素を再帰した\verb|listcat|の戻り値に加えるように再帰呼び出ししている．
+以下の入力を引数として渡し動作確認を行った．
+\begin{Verbatim}
+val test1 = listcat([1,2,3], [4,5])
+val test2 = listcat([1,2,3], [])
+val test3 = listcat([], [1,2,3])
+val test4 = listcat([], [])    
+\end{Verbatim}
+実行結果は次のようになった．
+\begin{Verbatim}
+    
+\end{Verbatim}
+
+\section{\texttt{listcmp.sml}}
+\section{\texttt{listexi.sml}}
+\section{\texttt{listlen.sml}}
+\section{\texttt{listsort.sml}}
+\subsection{\texttt{listsplit.sml}}
+\subsection{マージソートの実装}
+\section{\texttt{SML}や講義に関する所感}
+
+%%=================================================================%%
+\section{作成したプログラムのソースコード} \label{code}
+\subsection{\texttt{listcat.sml}のソースコード}
+\begin{Verbatim}[numbers=left, xleftmargin=8mm, numbersep=6pt,
+    fontsize=\small, baselinestretch=0.8]
+fun listcat([], x) = x : int list
+   |listcat(x, []) = x : int list
+   |listcat(x::xs, y) = x :: listcat(xs, y)
+\end{Verbatim}
+
+\end{document}
+%%=================================================================%%
+
