@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  26 MAY 2025 10:32
+This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  26 MAY 2025 10:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -310,22 +310,26 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 ] [2] [3]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 162.
+(Font)              scaled to size 11.09656pt on input line 170.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 162.
+(Font)              scaled to size 11.09656pt on input line 170.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 172.
+(Font)              scaled to size 8.32242pt on input line 180.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 172.
+(Font)              scaled to size 8.32242pt on input line 180.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 172.
+(Font)              scaled to size 8.32242pt on input line 180.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 172.
+(Font)              scaled to size 8.32242pt on input line 180.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 173.
+(Font)              scaled to size 7.3977pt on input line 181.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 173.
- [4] [5] [6] (./PL_Report.aux) ) 
+(Font)              scaled to size 7.3977pt on input line 181.
+ [4] [5] [6] (./PL_Report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  5184 strings out of 479842
  81641 string characters out of 5887289
@@ -333,6 +337,6 @@ Here is how much of TeX's memory you used:
  23469 multiletter control sequences out of 15000+600000
  481541 words of font info for 92 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 61i,6n,71p,370b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,6n,71p,370b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PL_Report.dvi (6 pages, 14808 bytes).
+Output written on PL_Report.dvi (6 pages, 15184 bytes).
