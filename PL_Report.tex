@@ -136,14 +136,14 @@ val test2 = [1,2,3,4] : int list
 作成した \verb|SML| ソースコードは第\ref{listcpy_code}章に添付している．
 %%=================================================================%%
 \section{\texttt{listexi.sml}の実装}
-リスト内に特定の要素が存在するかどうかを判定する \verb|listexi| 関数を実装した．
-\verb|C|言語における文字列検索関数 \verb|strchr| に相当する機能を，整数リストを対象として実現している．
+\texttt{listexi}関数は，整数とリストを引数に取り，その整数がリスト中に何回出現するかをカウントして返す関数である．
+パターンマッチングを用いて，リストの構造に応じた再帰処理を行うことで実現している．
 
-この関数は，整数とリストを引数に取り，リスト内にその整数が存在すれば \verb|true|，存在しなければ \verb|false| を返す．
-パターンマッチングを使用し，空リストに到達した場合には \verb|false| を返す終了条件とし，先頭要素が一致すれば \verb|true| を返す．
-一致しない場合には再帰的に残りのリストに対して同じ判定を行う．
+まずリストが空である場合（終了条件）には 0 を返す．
+それ以外の場合には，リストの先頭要素と比較し，一致していれば 1 を加算し，再帰的に残りのリストで同様の判定を行う．
+この処理により，リスト中の該当要素の合計出現回数を求めることができる．
 
-以下のような入力により動作確認を行った．
+以下にテスト入力とその実行結果を示す．
 \begin{Verbatim}
     val test1 = listexi(1, [1,2,3])
     val test2 = listexi(0, [1,2,3])
@@ -152,7 +152,15 @@ val test2 = [1,2,3,4] : int list
 \end{Verbatim}
 実行結果は次のようになった．
 \begin{Verbatim}
-    
+    L$ sml listexi.sml 
+Standard ML of New Jersey v110.79 [built: Sat Oct 26 12:27:04 2019]
+[opening listexi.sml]
+listexi.sml:4.27 Warning: calling polyEqual
+val listexi = fn : ''a * ''a list -> int
+val test1 = 1 : int
+val test2 = 0 : int
+val test3 = 2 : int
+val test4 = 0 : int
 \end{Verbatim}
 %%=================================================================%%
 \section{\texttt{listlen.sml}}
