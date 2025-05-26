@@ -166,13 +166,75 @@ val test4 = 0 : int
 この関数はリスト探索と条件分岐，再帰処理の組み合わせにより実装されており，基本的なリスト操作の理解に適した例である．
 作成した \texttt{SML} ソースコードは第\ref{listexi_code}章に添付している．
 %%=================================================================%%
-\section{\texttt{listlen.sml}}
+\section{\texttt{listlen.sml}の実装}
+\texttt{listlen}関数は，引数として与えられたリストの長さ（要素数）を求めて返す関数である．
+この関数は，パターンマッチングと再帰処理を用いてシンプルに実装されており，リスト操作の基礎的な理解に適している．
+
+リストが空であれば長さは 0 を返す．
+そうでない場合（リストが少なくとも1つの要素を持つ場合），リストの先頭を除いた残りのリストに対して再帰的に \texttt{listlen} を呼び出し，
+その結果に 1 を加えることで全体の長さを求めている．
+
+以下にテスト入力とその実行結果を示す．
+\begin{Verbatim}
+val test1 = listlen([])
+val test2 = listlen([1])
+val test3 = listlen([1, 2])
+val test4 = listlen([1,2,3])
+\end{Verbatim}
+実行結果は次のようになった．
+\begin{Verbatim}
+val test1 = 0 : int
+val test2 = 1 : int
+val test3 = 2 : int
+val test4 = 3 : int  
+\end{Verbatim}
+実行結果から，空リストを含むさまざまな長さのリストに対して，\texttt{listlen}関数が正しく要素数を返していることが確認できる．
+再帰を通じてリストを1つずつ処理しながら合計を求める構造は，SMLにおける関数型プログラミングの基本的な設計手法を反映している．
+作成した \texttt{SML} ソースコードは第\ref{listlen_code}章に添付している．
 %%=================================================================%%
 \section{\texttt{listsort.sml}}
+整数リストを昇順に整列する関数 \verb|listsort| を実装した．この関数はマージソート（Merge Sort）アルゴリズムに基づいており，
+以下の3つの関数から構成される
+\begin{itemize}
+  \item \texttt{merge}: 2つの整列済みリストを結合して新たな整列済みリストを生成する補助関数
+  \item \texttt{listsplit}: リストをおよそ半分に分割する補助関数
+  \item \texttt{listsort}: 与えられたリストを再帰的に分割し，整列しながら結合するメイン関数
+\end{itemize}
+各関数を以下の第\ref{listsplit}章，\ref{mergesort}章に詳細を記述している
+以下はテスト入力とその実行結果である.
+\begin{Verbatim}
+val test1 = listsort[5,4,3,2,1]
+val test2 = listsort[2,3,1,2]
+val test3 = listsort[]
+val test4 = listsort[4,3,2,1]
+\end{Verbatim}
+実行結果は次のようになった．
+\begin{Verbatim}
+$ sml listsort.sml 
+Standard ML of New Jersey v110.79 [built: Sat Oct 26 12:27:04 2019]
+[opening listsort.sml]
+val merge = fn : int list * int list -> int list
+val listsplit = fn : 'a list -> 'a list * 'a list
+val listsort = fn : int list -> int list
+val test1 = [1,2,3,4,5] : int list
+val test2 = [1,2,2,3] : int list
+val test3 = [] : int list
+val test4 = [1,2,3,4] : int list  
+\end{Verbatim}
+結果より，\texttt{listsort}関数が再帰的な分割・統合処理を通じて，任意の順序のリストを正しく昇順に整列していることが確認できた．
+このように，関数型言語SMLにおいても効率的な整列アルゴリズムを簡潔に表現できることが示された．
+ソースコードは第\ref{listsort_code}章に示す．
 %%=================================================================%%
-\subsection{\texttt{listsplit.sml}}
+\subsection{\texttt{listsplit.sml}}\label{listsplit}
+与えられたリストを約半分ずつの二つのリストに分割する \verb|listsplit| 関数を実装した．
+この関数は，マージソートなどの分割統治法を用いるアルゴリズムの前処理として有用である．
+
+関数の内部には，分割処理を再帰的に行う補助関数 \verb|loop| を定義しており，\verb|lst| を先頭から2つずつ取り出しながら
+左右のリスト \verb|left|，\verb|right| に交互に振り分けていく方式を採用している．
+処理終了後に \verb|rev| を用いてリストを元の順序に戻している点が特徴である．
+rev（リストの反転）を使う利点は、リストの末尾に要素を追加するコストを回避しつつ、意図した順序のリストを得られるという点からだ．
 %%=================================================================%%
-\subsection{マージソートの実装}
+\subsection{マージソートの実装}\label{mergesort}
 %%=================================================================%%
 \section{\texttt{SML}や講義に関する所感}
 
@@ -220,10 +282,6 @@ fun listexi(x, []) = 0
     fontsize=\small, baselinestretch=0.8]
 fun listlen([]) = 0
    |listlen(x::xs) = 1 + listlen(xs)
-val test1 = listlen([])
-val test2 = listlen([1])
-val test3 = listlen([1, 2])
-val test4 = listlen([1,2,3])
 \end{Verbatim}
 \subsection{\texttt{listsort.sml}のソースコード} \label{listsort_code}
 \begin{Verbatim}[numbers=left, xleftmargin=8mm, numbersep=6pt,
@@ -251,10 +309,6 @@ fun listsort([]) = []
     in
         merge(listsort left, listsort right)
     end;
-val test1 = listsort[5,4,3,2,1]
-val test2 = listsort[2,3,1,2]
-val test3 = listsort[]
-val test4 = listsort[4,3,2,1]
 \end{Verbatim}
 \subsection{\texttt{listsplit.sml}のソースコード} \label{listsplit_code}
 \begin{Verbatim}[numbers=left, xleftmargin=8mm, numbersep=6pt,

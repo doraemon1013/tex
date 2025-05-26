@@ -1,10 +1,10 @@
-This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  26 MAY 2025 13:33
+This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  26 MAY 2025 13:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/yuya/projects/temp/tex/PL_Report
-(/home/yuya/projects/temp/tex/PL_Report.tex
+**/home/yuya/projects/temp/tex/tempre
+(/home/yuya/projects/temp/tex/tempre.tex
 pLaTeX2e <2021-11-15u04> (based on LaTeX2e <2021-11-15> patch level 1)
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjsarticle.cls
 Document Class: bxjsarticle 2021/05/18 v2.5a BXJS document classes
@@ -178,67 +178,45 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count280
-\lst@gtempboxa=\box71
-\lst@token=\toks24
-\lst@length=\count281
-\lst@currlwidth=\dimen184
-\lst@column=\count282
-\lst@pos=\count283
-\lst@lostspace=\dimen185
-\lst@width=\dimen186
-\lst@newlines=\count284
-\lst@lineno=\count285
-\lst@maxwidth=\dimen187
- (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count286
-\lst@skipnumbers=\count287
-\lst@framebox=\box72
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
-))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
 )
-Package newfloat Info: New float `eopcode' with options `name=Listing, fileext=lol' on input line 16.
-\c@eopcode=\count288
-\newfloat@ftype=\count289
-Package newfloat Info: float type `eopcode'=8 on input line 16.
+Package newfloat Info: New float `eopcode' with options `name=Listing, fileext=lol' on input line 11.
+\c@eopcode=\count280
+\newfloat@ftype=\count281
+Package newfloat Info: float type `eopcode'=8 on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2022-01-12 L3 backend support: dvipdfmx
  (|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count290
-\l__color_backend_stack_int=\count291
-\g__color_backend_stack_int=\count292
-\g__graphics_track_int=\count293
-\l__pdf_internal_box=\box73
-\g__pdf_backend_object_int=\count294
-\g__pdf_backend_annotation_int=\count295
-\g__pdf_backend_link_int=\count296
-) (./PL_Report.aux)
-\openout1 = `PL_Report.aux'.
+\c__kernel_sys_dvipdfmx_version_int=\count282
+\l__color_backend_stack_int=\count283
+\g__color_backend_stack_int=\count284
+\g__graphics_track_int=\count285
+\l__pdf_internal_box=\box71
+\g__pdf_backend_object_int=\count286
+\g__pdf_backend_annotation_int=\count287
+\g__pdf_backend_link_int=\count288
+) (./tempre.aux)
+\openout1 = `tempre.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -273,71 +251,86 @@ LaTeX Font Info:    ... okay on input line 32.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count297
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 33.
+(Font)              scaled to size 15.97903pt on input line 28.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 33.
+(Font)              scaled to size 15.97903pt on input line 28.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 33.
+(Font)              scaled to size 11.09656pt on input line 28.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 33.
+(Font)              scaled to size 11.09656pt on input line 28.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 33.
+(Font)              scaled to size 7.3977pt on input line 28.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 33.
+(Font)              scaled to size 5.54828pt on input line 28.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 34.
+(Font)              scaled to size 13.31586pt on input line 29.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 34.
+(Font)              scaled to size 13.31586pt on input line 29.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 34.
+(Font)              scaled to size 13.31586pt on input line 29.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 34.
+(Font)              scaled to size 13.31586pt on input line 29.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 35.
+(Font)              scaled to size 9.24713pt on input line 30.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 35.
+(Font)              scaled to size 9.24713pt on input line 30.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 34.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 34.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 35.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 35.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 41.
+(Font)              scaled to size 9.24713pt on input line 37.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 41.
+(Font)              scaled to size 9.24713pt on input line 37.
+/home/yuya/projects/temp/tex/tempre.tex:39: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.39         \verb||    &   $1$  &   $1$  &
+                                            \\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+LaTeX Warning: File `Pro_Lan_Result.PNG' not found on input line 45.
+
+
+/home/yuya/projects/temp/tex/tempre.tex:45: LaTeX Error: Cannot determine size of graphic in Pro_Lan_Result.xbb (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 ...degraphics[scale=0.4]{Pro_Lan_Result.PNG}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: Pro_Lan_Result.PNG Graphic file (type bmp)
+<Pro_Lan_Result.PNG>
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 51.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 51.
 [1
 
-] [2] [3] [4]
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 228.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 228.
- [5]
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 245.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 245.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 245.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 245.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 246.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 246.
- [6] [7] (./PL_Report.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./tempre.aux) ) 
 Here is how much of TeX's memory you used:
- 5186 strings out of 479842
- 81663 string characters out of 5887289
- 388063 words of memory out of 5000000
- 23471 multiletter control sequences out of 15000+600000
- 481541 words of font info for 92 fonts, out of 8000000 for 9000
+ 3881 strings out of 479842
+ 63189 string characters out of 5887289
+ 363418 words of memory out of 5000000
+ 22156 multiletter control sequences out of 15000+600000
+ 480629 words of font info for 87 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 61i,6n,71p,370b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,9n,71p,308b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PL_Report.dvi (7 pages, 20424 bytes).
+Output written on tempre.dvi (1 page, 1380 bytes).
