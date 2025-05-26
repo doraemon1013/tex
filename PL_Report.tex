@@ -6,6 +6,11 @@
 \usepackage{graphicx}
 \usepackage{fancyvrb}
 \usepackage{amsmath}
+\usepackage{listings}
+\lstset{
+  breaklines=true,      % 長い行を折り返す
+  basicstyle=\ttfamily\small
+}
 \renewcommand{\theFancyVerbLine}{\texttt{\footnotesize{\arabic{FancyVerbLine}:}}}
 \usepackage{newfloat}
 \DeclareFloatingEnvironment[name=Listing, fileext=lol]{eopcode}
@@ -41,12 +46,17 @@
     \item \textbf{listsort}：\verb|sort|に対応し，マージソートによりリストを昇順に並べ替える．
 \end{itemize}
 作成したプログラムは第\ref{code}章に添付している．
-\section{\texttt{listcat.sml}}
-引数として二つのリストを受け取り，そのリストを繋げてできる一つのリストを返り値
-とする\verb|listcat|関数を作成した．パターンマッチングを使用し引数の，場合分けを行い
-異なる処理を行う．片方が空リストであればもう片方のリストを返す．どちらも要素を持つときは
-第一引数の初めの要素を再帰した\verb|listcat|の戻り値に加えるように再帰呼び出ししている．
-以下の入力を引数として渡し動作確認を行った．
+%%--------------------------------------------------------------------------------------------------------------------------
+\section{\texttt{listcat.sml}の実装}
+
+二つのリストを引数として受け取り、それらを結合した一つのリストを返す \verb|listcat| 関数を実装した。パターンマッチングを用いて引数の構造に応じた場合分けを行い、異なる処理を実現している。
+
+片方が空リストであれば、もう片方のリストをそのまま返す。両方のリストに要素がある場合は、第一引数の先頭要素を取り出し、それを再帰的に呼び出された \verb|listcat| の戻り値の先頭に加えることでリストを構築する。
+
+この再帰処理は、第一引数が空リストとなった時点で終了し、第二引数がそのまま返される。このとき、再帰は打ち切られ、結合されたリストが得られる。
+
+以下のテスト入力により動作確認を行った。
+
 \begin{Verbatim}
 val test1 = listcat([1,2,3], [4,5])
 val test2 = listcat([1,2,3], [])
@@ -55,27 +65,84 @@ val test4 = listcat([], [])
 \end{Verbatim}
 実行結果は次のようになった．
 \begin{Verbatim}
-    
+$ sml listcat.sml 
+Standard ML of New Jersey v110.79 [built: Sat Oct 26 12:27:04 2019]
+[opening listcat.sml]
+val listcat = fn : int list * int list -> int list
+val test1 = [1,2,3,4,5] : int list
+val test2 = [1,2,3] : int list
+val test3 = [1,2,3] : int list
+val test4 = [] : int list   
 \end{Verbatim}
+結果を見るときちんと二つのリストを合併し一つのリストの作成に成功している．また空リストの時もきちんと動作してることがわかる．
+以上が二つのリストの合併\verb|listcat|の実装，解説である．作成した\verb|SML|ソースコードは第\ref{listcat_code}章に添付している．
+%%------------------------------------------------------------------------------------------------------------------------
+\section{\texttt{listcmp.sml}の実装}
+二つのリストを引数として受け取り，対応する要素の差をすべて合計し返す \verb|listcmp| 関数を実装した．
+\verb|strcmp| 関数のような等価判定ではなく，数値的な差異を合計してリスト間の「違いの度合い」を測ることができる．
 
-\section{\texttt{listcmp.sml}}
+関数内部ではパターンマッチングを用い，両方が空リストなら \verb|0| を返す．一方が空リストで他方に要素が残っている場合には，残りの要素をすべて加算して返す．
+両方に要素がある場合には，先頭要素の差を取り，再帰的に残りのリストに対して同様の処理を行っている．
+
+以下の入力を引数として渡し，動作確認を行った．
+\begin{Verbatim}
+val test1 = listcmp([1,2,3], [1,2,3])
+val test2 = listcmp([1,2,3], [1,2,2])
+val test3 = listcmp([1,2,3], [1,2,4])
+val test4 = listcmp([1,2,3], [1,2])
+val test5 = listcmp([1,2], [1,2,3])
+val test6 = listcmp([], [])    
+\end{Verbatim}
+実行結果は次のようになった．
+\begin{Verbatim}
+$ sml listcmp.sml 
+Standard ML of New Jersey v110.79 [built: Sat Oct 26 12:27:04 2019]
+[opening listcmp.sml]
+val listcmp = fn : int list * int list -> int
+val test1 = 0 : int
+val test2 = 1 : int
+val test3 = ~1 : int
+val test4 = 3 : int
+val test5 = 3 : int
+val test6 = 0 : int    
+\end{Verbatim}
+結果を見るときちんと二つのリストの辞書的な差異を数値として出力できている．リストどおしの要素数が違う場合もきちんと動作している．
+以上がリストを比較する\verb|listcmp|関数の実装，解説である．作成した\verb|SML|ソースコードは第\ref{listcmp_code}章に添付している．
+%%=================================================================%%
 \section{\texttt{listexi.sml}}
+%%=================================================================%%
 \section{\texttt{listlen.sml}}
+%%=================================================================%%
 \section{\texttt{listsort.sml}}
+%%=================================================================%%
 \subsection{\texttt{listsplit.sml}}
+%%=================================================================%%
 \subsection{マージソートの実装}
+%%=================================================================%%
 \section{\texttt{SML}や講義に関する所感}
 
 %%=================================================================%%
 \section{作成したプログラムのソースコード} \label{code}
-\subsection{\texttt{listcat.sml}のソースコード}
+\subsection{\texttt{listcat.sml}のソースコード} \label{listcat_code}
 \begin{Verbatim}[numbers=left, xleftmargin=8mm, numbersep=6pt,
     fontsize=\small, baselinestretch=0.8]
 fun listcat([], x) = x : int list
    |listcat(x, []) = x : int list
    |listcat(x::xs, y) = x :: listcat(xs, y)
 \end{Verbatim}
-
+\subsection{\texttt{listcmp.sml}のソースコード} \label{listcmp_code}
+\begin{Verbatim}[numbers=left, xleftmargin=8mm, numbersep=6pt,
+    fontsize=\small, baselinestretch=0.8]
+fun listcmp([],[]) = 0
+   |listcmp([], x::xs) = x + listcmp([], xs)
+   |listcmp(x::xs ,[]) = x + listcmp(xs, [])
+   |listcmp(x::xs, y::ys) = 
+    let
+        val diff = x - y
+    in
+        diff + listcmp(xs, ys)
+    end;
+\end{Verbatim}
 \end{document}
 %%=================================================================%%
 
