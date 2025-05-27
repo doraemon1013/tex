@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  26 MAY 2025 13:44
+This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  26 MAY 2025 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -200,13 +200,22 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
 )
-Package newfloat Info: New float `eopcode' with options `name=Listing, fileext=lol' on input line 16.
+Package newfloat Info: New float `eopcode' with options `name=Listing, fileext=lol' on input line 18.
 \c@eopcode=\count288
 \newfloat@ftype=\count289
-Package newfloat Info: float type `eopcode'=8 on input line 16.
+Package newfloat Info: float type `eopcode'=8 on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2022-01-12 L3 backend support: dvipdfmx
  (|extractbb --version)
@@ -221,24 +230,24 @@ File: l3backend-dvipdfmx.def 2022-01-12 L3 backend support: dvipdfmx
 ) (./PL_Report.aux)
 \openout1 = `PL_Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -275,65 +284,77 @@ LaTeX Font Info:    ... okay on input line 32.
 
 \c@lstlisting=\count297
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 33.
+(Font)              scaled to size 15.97903pt on input line 35.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 33.
+(Font)              scaled to size 15.97903pt on input line 35.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 33.
+(Font)              scaled to size 11.09656pt on input line 35.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 33.
+(Font)              scaled to size 11.09656pt on input line 35.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 33.
+(Font)              scaled to size 7.3977pt on input line 35.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 33.
+(Font)              scaled to size 5.54828pt on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 34.
+(Font)              scaled to size 13.31586pt on input line 36.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 34.
+(Font)              scaled to size 13.31586pt on input line 36.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 34.
+(Font)              scaled to size 13.31586pt on input line 36.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 34.
+(Font)              scaled to size 13.31586pt on input line 36.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 35.
+(Font)              scaled to size 9.24713pt on input line 37.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 35.
+(Font)              scaled to size 9.24713pt on input line 37.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 41.
+(Font)              scaled to size 9.24713pt on input line 43.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 41.
-[1
+(Font)              scaled to size 9.24713pt on input line 43.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 50.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 50.
+ [1
 
 ] [2] [3] [4]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 228.
+(Font)              scaled to size 11.09656pt on input line 230.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 228.
+(Font)              scaled to size 11.09656pt on input line 230.
  [5]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 245.
+(Font)              scaled to size 8.32242pt on input line 247.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 245.
+(Font)              scaled to size 8.32242pt on input line 247.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 245.
+(Font)              scaled to size 8.32242pt on input line 247.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 245.
+(Font)              scaled to size 8.32242pt on input line 247.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 246.
+(Font)              scaled to size 7.3977pt on input line 248.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 246.
+(Font)              scaled to size 7.3977pt on input line 248.
  [6] [7] (./PL_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 5186 strings out of 479842
- 81663 string characters out of 5887289
- 388063 words of memory out of 5000000
- 23471 multiletter control sequences out of 15000+600000
- 481541 words of font info for 92 fonts, out of 8000000 for 9000
+ 5726 strings out of 479842
+ 88047 string characters out of 5887289
+ 388563 words of memory out of 5000000
+ 23992 multiletter control sequences out of 15000+600000
+ 484831 words of font info for 108 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
  61i,6n,71p,370b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PL_Report.dvi (7 pages, 20424 bytes).
+Output written on PL_Report.dvi (7 pages, 20476 bytes).
