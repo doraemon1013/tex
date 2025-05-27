@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  26 MAY 2025 15:47
+=======
+This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2024.12.3)  26 MAY 2025 18:24
+>>>>>>> 3784066a5b46660a8d40cc70b9a37e727c54e79d
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/yuya/projects/temp/tex/PL_Report
-(/home/yuya/projects/temp/tex/PL_Report.tex
+**/home/yuya/projects/homework/tex/PL_Report
+(/home/yuya/projects/homework/tex/PL_Report.tex
 pLaTeX2e <2021-11-15u04> (based on LaTeX2e <2021-11-15> patch level 1)
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjsarticle.cls
 Document Class: bxjsarticle 2021/05/18 v2.5a BXJS document classes
@@ -335,6 +339,7 @@ LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 11.09656pt on input line 230.
  [5]
+<<<<<<< HEAD
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 8.32242pt on input line 247.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
@@ -354,7 +359,37 @@ Here is how much of TeX's memory you used:
  388563 words of memory out of 5000000
  23992 multiletter control sequences out of 15000+600000
  484831 words of font info for 108 fonts, out of 8000000 for 9000
+=======
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 264.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 264.
+ [6]
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 287.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 287.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 287.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 287.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 288.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 288.
+ [7] [8] (./PL_Report.aux) ) 
+Here is how much of TeX's memory you used:
+ 5188 strings out of 479842
+ 81703 string characters out of 5887289
+ 388065 words of memory out of 5000000
+ 23473 multiletter control sequences out of 15000+600000
+ 482351 words of font info for 96 fonts, out of 8000000 for 9000
+>>>>>>> 3784066a5b46660a8d40cc70b9a37e727c54e79d
  269 hyphenation exceptions out of 8191
- 61i,6n,71p,370b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,6n,71p,374b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+<<<<<<< HEAD
 Output written on PL_Report.dvi (7 pages, 20476 bytes).
+=======
+Output written on PL_Report.dvi (8 pages, 24960 bytes).
+>>>>>>> 3784066a5b46660a8d40cc70b9a37e727c54e79d
