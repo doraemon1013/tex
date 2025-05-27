@@ -1,0 +1,198 @@
+\documentclass[autodetect-engine,dvi=dvipdfmx,ja=standard,
+               a4j,11pt]{bxjsarticle}
+\RequirePackage{geometry}
+\geometry{reset,paperwidth=210truemm,paperheight=297truemm}
+\geometry{hmargin=25truemm,top=20truemm,bottom=25truemm,footskip=10truemm,headheight=0mm}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\renewcommand{\theFancyVerbLine}{\texttt{\footnotesize{\arabic{FancyVerbLine}:}}}
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[name=Listing, fileext=lol]{eopcode}
+\topmargin=-1cm
+    \textheight=24cm
+    \textwidth=15.5cm
+    \oddsidemargin=-.2cm
+    \evensidemargin=-.2cm
+%%======== レポートタイトル等 ======================================%%
+% ToDo: 提出要領に従って，適切なタイトル・サブタイトルを設定する
+\title{{\normalsize 情報工学実験A（ハードウェア）報告書}\\
+        32ビットマイクロプロセッサの設計    } 
+
+% ToDo: 自分自身の氏名と学生番号に書き換える
+\author{氏名: 赤松 佑哉 (akamatsu, YUYA) \\
+        学生番号: 09B23595\\
+        E-mail: p5785hcf@s.okayama-u.ac.jp}
+
+% ToDo: レポート課題等の指示に従って適切に書き換える
+\date{出題日: 2024年月日 \\
+      提出日: 2024年月日 \\
+      締切日: 2024年月日 \\}  % 注：最後の\\は不要に見えるが必要．
+
+
+%%======== 本文 ====================================================%%
+\begin{document}
+\maketitle
+\begin{abstract}
+本実験では，ハードウェア記述言語およびCAD（Computer Aided Design）ツールを利用したマイクロプロセッサ設計を通じて，
+論理回路，コンピュータアーキテクチャ，およびコンピュータシステムに関する理解を深めることを目的とする．
+特に，デジタル回路の設計から高位のシステム構築に至る一連の工程を体験することで，ハードウェアとソフトウェアの連携の重要性を理解することを狙いとする．
+実験内容としては，まずハードウェア記述言語とCADツールの使用方法を学び，それらを用いた簡単な論理回路の設計を行う．
+最終的な目標は，32ビットマイクロプロセッサの設計である．
+実験ではまず，ハードウェア記述言語（HDL）とCADツールの使用方法を学び，簡単な論理回路の設計と検証を通して基本的な回路設計の流れを習得した．
+次に，それらの知識を応用し，最終的には32ビットマイクロプロセッサの設計を目指す．プロセッサ設計においては，命令のデコード，レジスタファイルの設計，
+ALU（算術論理演算器）の構築，制御信号の生成といった基本機能の実装を行った．また，基本的なCPUの演算機能の実現に加えて，
+除算や乗算といったやや複雑な演算機能の拡張実装や，加算演算における効率化の手法の導入など，
+発展課題にも取り組んだ．
+プロセッサ設計の実験では，アセンブラ，シミュレータ，およびハードウェア設計支援システムなど，複数のツールを使用する．
+それぞれのツールごとに個別の設定を行わず，すべてのツールに共通する設定ファイルが用意されておりそれらを使用し実験をした．
+\end{abstract}
+%%============================================================%%
+\section{設計したプロセッサの概要}
+本実験では，MIPSアーキテクチャのサブセットをベースとした，32ビットRISCマイクロプロセッサ「p32」の設計を行った．
+このプロセッサは，教育目的に特化した構成を採っており，命令数を抑えたうえで，ハードウェア設計，命令処理のパイプライン化，およびデータパスの理解を深めることができるように設計されている．
+以下に，命令セット，内部構造，処理方式の概要を示す．
+
+\subsection*{(1) 命令セット}
+
+p32はMIPSのサブセットに基づき，以下のような命令群を備えている．命令形式はR形式，I形式，J形式の3種類があり，以下の表に代表的な命令の分類を示す．
+\begin{table}[hbtp]
+\centering
+\caption{p32の主な命令セット}
+\begin{tabularx}{\linewidth}{|l|X|}
+\hline
+種類 & 命令内容（例） \\
+\hline
+ロード／ストア命令 & \texttt{lw, sw, lb, sb}：メモリとレジスタ間のデータ転送 \\
+\hline
+演算命令 & \texttt{add, sub, and, or, xor, nor, sll, srl, sra, addi, subi}：算術・論理・シフト演算 \\
+\hline
+条件分岐命令 & \texttt{beq, bne}：条件による分岐 \\
+\hline
+ジャンプ命令 & \texttt{j, jal, jr, jalr}：無条件ジャンプ，リンク付きジャンプ \\
+\hline
+その他 & \texttt{lui, syscall}：定数操作，システム呼出し \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection*{(2) 内部構造の概略}
+
+p32プロセッサの主要な構成要素は以下の通りである．
+
+\begin{itemize}
+\item \textbf{レジスタファイル}：32ビット幅の汎用レジスタを32本搭載し，2ポート出力・1ポート入力を持つ．
+\item \textbf{実行ユニット}：32ビットALUとシフタを含み，加算，論理演算，シフト演算などを1サイクルで実行可能．乗算器や除算器の拡張も可能．
+\item \textbf{制御ユニット}：命令のopコードやfunctフィールドに応じて制御信号を生成し，データパスを制御．
+\item \textbf{メモリインターフェース}：命令メモリとデータメモリを分離したハーバードアーキテクチャとする．
+\item \textbf{メモリアーキテクチャ}：ビッグエンディアンにより配置している．
+\end{itemize}
+\subsection*{(3) 処理方式の概略}
+
+p32では複数の実行方式が検討され，最終的には以下のような5ステージパイプライン構成が採用された．
+
+\begin{itemize}
+\item \textbf{IF（Instruction Fetch）}：命令メモリから命令を取得
+\item \textbf{ID（Instruction Decode）}：命令のデコードとレジスタ読み出し
+\item \textbf{EX（Execute）}：ALUによる演算実行
+\item \textbf{MEM（Memory Access）}：メモリアクセス（ロード／ストア）
+\item \textbf{WB（Write Back）}：演算結果をレジスタに書き戻し
+\end{itemize}
+
+また，データハザード対策としてフォワーディング機構が導入されており，一部のハザードにはNOPを挿入して対処している．パイプラインの導入により，命令の同時実行を通してスループットの向上が図られている．
+%%============================================================%%
+\section{実施状況の報告}
+今回問われた課題について自分の実施状況について以下の表にまとめる．
+\begin{table}[b]
+    \caption{プログラミング課題，設計課題および発展課題の実施状況}
+    \label{tab:プログラミング課題，設計課題および発展課題の実施状況}
+    \begin{center}
+    {\small
+    \begin{tabular}{rll|l}
+    \hline
+    \hline
+    \multicolumn{3}{c|}{課題} & 状況 \\
+    \hline
+    \multicolumn{3}{l|}{(プログラミング課題)} & \\
+    1. & \multicolumn{2}{l|}{【プログラミング課題1】$N$個の語の加算 } & (2)完了 \\
+    2. & \multicolumn{2}{l|}{【プログラミング課題2】$N$語のメモリコピー} & (2)完了 \\
+    3. & \multicolumn{2}{l|}{【プログラミング課題3】乗算} & (2)完了 \\
+    \multicolumn{3}{l|}{(設計課題2)} & \\
+    4. & 【設計課題2-1】32ビット加算器   & \verb|add32|          & (2)設計完了 \\
+    5. & 【設計課題2-2】32ビットALU      & \verb|alu32|          & (2)設計完了 \\
+    6. & 【設計課題2-3】32ビットシフタ   & \verb|shift32|        & (2)設計完了 \\
+    \multicolumn{3}{l|}{(発展課題2)} & \\
+    7. & 【発展課題2-1】32ビット整数乗算器 & \verb|mult32|       & (9)非担当 \\
+    8. & 【発展課題2-1】32ビット整数除算器 & \verb|div32|        & (2)設計完了 \\
+    \multicolumn{3}{l|}{(設計課題3)} & \\
+    9. & 【設計課題3-1】レジスタファイル & \verb|regs32x32|      & (2)設計完了 \\
+    10. & 【設計課題3-2】実行ユニット     & \verb|p32ExecUnit|    & (2)設計完了 \\
+    11. & 【設計課題3-3】デコードユニット & \verb|p32DecodeUnit|  & (2)設計完了 \\
+    \multicolumn{3}{l|}{(設計課題4)} & \\
+    12. & 【設計課題4-1】プロセッサ      & \verb|p32m1|          & (2)設計完了 \\
+    13. & 【設計課題4-2】プロセッサ      & \verb|p32m2|          & (2)設計完了 \\
+    14. & 【設計課題4-3】プロセッサ      & \verb|p32p1|          & (2)設計完了 \\
+    \multicolumn{3}{l|}{(発展課題4)} & \\
+    15. & 【発展課題4-1】改良            &                       & (2)設計完了 \\
+    16. & 【発展課題4-2】乗算機能の実装  &                       & (2)設計完了 \\
+    17. & 【発展課題4-3】自由課題        &                       & (1)設計中 \\
+    \hline
+    \end{tabular}
+    }
+    \end{center}
+    \end{table}
+    \clearpage
+%%============================================================%%
+\section{課題に関する報告}
+\subsection{プログラミング課題に関する報告}
+\subsection{プロセッサ設計課題に関する報告}
+\subsection{追加課題や発展課題に関する報告}
+%%============================================================%%
+\section{検討・考察}
+%%============================================================%%
+\section{工夫した点や特に力を注いだ点}
+%%============================================================%%
+\section{本実験の成果と実験を実施して得られたこと}
+%%============================================================%%
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{Verbatim}
+\end{Verbatim}
+\begin{table}[b]
+    \centering 
+      \caption{計算結果}%表の題%
+      \begin{tabular}{|l|l|l|}
+      \hline
+        \textbf{} & \textbf{} & \textbf{} \\ %label
+      \hline
+        \verb||    &   $1$  &   $1$  & \\
+      \hline
+      \end{tabular}
+    \end{table}
+    \begin{figure}[htb]
+        \centering
+        \rotatebox{270}{\includegraphics[scale=0.4]{Pro_Lan_Result.PNG}}
+        \vspace{20pt} % ← 適宜調整
+        \caption{}
+    \end{figure}
+\section{作成したプログラムのソースコード}
+\begin{Verbatim}[numbers=left, xleftmargin=8mm, numbersep=6pt,
+    fontsize=\small, baselinestretch=0.8]
+\end{Verbatim}
+
