@@ -224,7 +224,11 @@ mapsを用いることで命令ごとの実行状況やメモリ内容、レジ�
   本シミュレータは命令数や実行サイクル数，予約語の展開状況なども詳細に出力するため，定量的な性能比較としても利用できた．
 \end{enumerate}
 
-このMakefileには，論理合成用（\texttt{map}），配置配線用（\texttt{fit}），静的タイミング解析（\texttt{sta}）のコマンドも定義されており，\texttt{make map}, \texttt{make fit}, \texttt{make sta} の順に実行することで，FPGA向けの合成からタイミング特性の取得までを一括で実行可能である．特に \texttt{make sta} では，レポートファイル \texttt{.sta.rpt} から最大動作周波数（Fmax）を抽出して評価に使用した．
+このMakefileには，論理合成用（\texttt{map}），配置配線用（\texttt{fit}），静的タイミング解析（\texttt{sta}）のコマンドも定義されており，
+\texttt{make map}, \texttt{make fit}, \texttt{make sta} の順に実行することで，
+FPGA向けの合成からタイミング特性の取得までを一括で実行可能である．
+特に \texttt{make sta} では，
+レポートファイル \texttt{.sta.rpt} から最大動作周波数（Fmax）を抽出して評価に使用した．
 
 \subsection{プロセッサ設計課題に関する報告}
 

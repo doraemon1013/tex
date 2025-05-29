@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  29 MAY 2025 12:19
+This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  29 MAY 2025 13:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,15 +325,15 @@ File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 ] [5] [6] [7]
 LaTeX Font Info:    Font shape `JT2/gt/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 374.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 378.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 374.
+(Font)              scaled to size 9.24713pt on input line 378.
 LaTeX Font Info:    Font shape `JY2/gt/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 374.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 378.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 374.
+(Font)              scaled to size 9.24713pt on input line 378.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 374.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 378.
  [8] (./ite_Report.aux) ) 
 Here is how much of TeX's memory you used:
  3978 strings out of 479842
