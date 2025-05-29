@@ -1,10 +1,10 @@
-This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2024.12.3)  29 MAY 2025 00:27
+This is e-upTeX, Version 3.141592653-p3.9.1-u1.27-210218-2.6 (utf8.uptex) (TeX Live 2022/dev/Debian) (preloaded format=uplatex 2025.5.26)  29 MAY 2025 13:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/yuya/projects/homework/tex/ite_Report
-(/home/yuya/projects/homework/tex/ite_Report.tex
+**/home/yuya/projects/temp/tex/ite_Report
+(/home/yuya/projects/temp/tex/ite_Report.tex
 pLaTeX2e <2021-11-15u04> (based on LaTeX2e <2021-11-15> patch level 1)
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/bxjscls/bxjsarticle.cls
 Document Class: bxjsarticle 2021/05/18 v2.5a BXJS document classes
@@ -341,11 +341,11 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
  [7] [8] [9] [10] (./ite_Report.aux) ) 
 Here is how much of TeX's memory you used:
  3988 strings out of 479842
- 64988 string characters out of 5887289
+ 64976 string characters out of 5887289
  372482 words of memory out of 5000000
  22271 multiletter control sequences out of 15000+600000
  483928 words of font info for 101 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 61i,10n,71p,468b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,10n,71p,464b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on ite_Report.dvi (10 pages, 49356 bytes).
